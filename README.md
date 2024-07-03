@@ -5,6 +5,7 @@ This script allows you to export, import, and apply localization strings for Cal
 ## Prerequisites
 
 Before running this script, you need to install the required Python packages and ensure the game is running.
+Based on https://github.com/yusuf202021/cod-iw-localization.
 
 ## Running the Script
 
