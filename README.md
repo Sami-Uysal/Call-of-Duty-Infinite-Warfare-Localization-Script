@@ -1,5 +1,7 @@
 # Call of Duty: Infinite Warfare Localization Script
 
+Based on https://github.com/yusuf202021/cod-iw-localization.
+
 This script allows you to export, import, and apply localization strings for Call of Duty: Infinite Warfare. Follow these steps to get started!
 
 ## Prerequisites
