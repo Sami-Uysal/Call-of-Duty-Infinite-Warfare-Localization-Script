@@ -49,6 +49,7 @@ def export():
             ret[id_o] = string
         except Exception as e:
             print(f"Error at index {i}: {e}")
+            start += 16
             continue
     with open("localize.json", "w", encoding="utf8") as f:
         json.dump(ret, f, indent=4, ensure_ascii=False)
@@ -76,6 +77,7 @@ def _import():
             string, id = read_null(pm, entry.string_o), read_null(pm, entry.id_o)
         except Exception as e:
             print(f"Error at index {i}: {e}")
+            start += 16
             continue
         if id in strings:
             print(f"Hooking {id} to {hex(table_offsets[id] + new_table)} from {hex(entry.string_o)}. New string: {strings[id]}")
