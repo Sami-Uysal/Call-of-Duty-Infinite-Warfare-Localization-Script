@@ -68,6 +68,3 @@ Before running this script, you need to install the required Python packages and
 - Running the script with administrator privileges is required to access and modify the game process memory.
 - If you encounter any errors or need further assistance, please check the error messages printed in the command prompt and verify that all prerequisites are met.
 
----
-
-Save this content into a file named `README.md` in the same directory as your script and `requirements.txt`. This will provide clear instructions for anyone needing to set up and run the script.
