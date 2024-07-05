@@ -4,6 +4,7 @@ import sys
 from construct import Struct, Int64ul
 import psutil
 
+
 entry_struct = Struct(
     "string_o" / Int64ul,
     "id_o" / Int64ul
@@ -56,7 +57,7 @@ def _import(pm, start_address, count):
     if not new_table:
         raise MemoryError("Failed to allocate memory in the target process.")
     
-    pm.write_bytes(new_table, to_write, len(to_write))
+    pm.write_bytes(new_table, bytes(to_write), len(to_write))
 
     start = start_address
     for i in range(count):
